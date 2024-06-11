@@ -1,0 +1,29 @@
+usuario107@PC36:~$ mkdir EstacaoEspacial
+usuario107@PC36:~$ cd EstacaoEspacial
+usuario107@PC36:~/EstacaoEspacial$ mkdir Habitacao
+usuario107@PC36:~/EstacaoEspacial$ mkdir Laboratorio
+usuario107@PC36:~/EstacaoEspacial$ mkdir Hangar
+usuario107@PC36:~/EstacaoEspacial$ cd Habitacao
+usuario107@PC36:~/EstacaoEspacial/Habitacao$ mkdir quarto 1
+usuario107@PC36:~/EstacaoEspacial/Habitacao$ mkdir quarto 2
+mkdir: não foi possível criar o diretório “quarto”: Arquivo existe
+usuario107@PC36:~/EstacaoEspacial/Habitacao$ mkdir quarto_1 quarto_2 quarto_3
+usuario107@PC36:~/EstacaoEspacial/Habitacao$ cd Laboratorio
+bash: cd: Laboratorio: Arquivo ou diretório inexistente
+usuario107@PC36:~/EstacaoEspacial/Habitacao$ cd 
+usuario107@PC36:~$ cd EstacaoEspacial
+usuario107@PC36:~/EstacaoEspacial$ cd Laboratorio
+usuario107@PC36:~/EstacaoEspacial/Laboratorio$ mkdir Pesquisa_1 Pesquisa_2
+usuario107@PC36:~/EstacaoEspacial/Laboratorio$ cd
+usuario107@PC36:~$ cd EstacaoEspacial
+usuario107@PC36:~/EstacaoEspacial$ cd HAngar
+bash: cd: HAngar: Arquivo ou diretório inexistente
+usuario107@PC36:~/EstacaoEspacial$ cd Hangar
+usuario107@PC36:~/EstacaoEspacial/Hangar$ mkdir nave_1 nave_2 nave_3
+usuario107@PC36:~/EstacaoEspacial$ rm -r Hangar
+usuario107@PC36:~/EstacaoEspacial$ touch BoasVindas.txt
+usuario107@PC36:~/EstacaoEspacial$ echo "Bem vindos á estação espacial!" > BoasVindas.txt
+usuario107@PC36:~/EstacaoEspacial$ cp BoasVindas.txt ../EstacaoEspacial/Laboratorio/
+usuario107@PC36:~/EstacaoEspacial/Laboratorio$ echo "Bem Vindos à estação espacial! Este é o Laboratório!" > BoasVindas.txt
+
+
