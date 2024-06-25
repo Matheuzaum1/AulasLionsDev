@@ -1,0 +1,23 @@
+let palavra;
+let anagrama = []; // Inicializa anagrama como um array vazio
+
+console.log("Digite uma palavra para gerar um anagrama");
+
+process.stdin.on("data", function(data) {
+    palavra = data.toString().trim();
+    
+    palavra = palavra.split("");
+    for (let i = 0; i < palavra.length; i++) {
+        for (let j = 0; j < palavra.length; j++) {
+            let aux = palavra[i];
+            palavra[i] = palavra[j];
+            palavra[j] = aux;
+
+            let novoAnagrama = palavra.join("");
+            if (!anagrama.includes(novoAnagrama)) {
+                console.log(novoAnagrama);
+                anagrama.push(novoAnagrama); // Adiciona novoAnagrama ao array anagrama
+            }
+        }
+    }
+});
